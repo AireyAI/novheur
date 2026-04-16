@@ -21,6 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
+  <!-- Preload hero video -->
+  <link rel="preload" href="images/hero-video.mp4" as="video" type="video/mp4">
+
   <!-- Fonts: Cormorant Garamond (display) + DM Sans (body) -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
@@ -396,7 +399,7 @@
   <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
     <!-- Hero Video -->
     <div class="absolute inset-0">
-      <video autoplay muted loop playsinline poster="images/hero.jpg" class="w-full h-full object-cover object-center" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="auto" poster="images/hero.jpg" class="w-full h-full object-cover object-center" aria-hidden="true">
         <source src="images/hero-video.mp4" type="video/mp4">
         <img src="images/hero.jpg" alt="Novheur fashion editorial - woman in elegant black dress" class="w-full h-full object-cover object-center" width="1920" height="1080">
       </video>
